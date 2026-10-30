@@ -60,7 +60,7 @@ AMBIGUITY RESOLUTIONS (every implementation choice the article leaves open is re
       window logic from any other baseline. Within a
       window, xdot/ydot at each INTERIOR sample i are estimated by the standard central secant
       (x[i+1]-x[i-1])/(t[i+1]-t[i-1]), and xddot/yddot by the standard 3-point central second-
-      difference for a non-uniform grid, 2*[(x[i+1]-x[i])/dt_next - (x[i]-x[i])/dt_prev]/(dt_prev+
+      difference for a non-uniform grid, 2*[(x[i+1]-x[i])/dt_next - (x[i]-x[i-1])/dt_prev]/(dt_prev+
       dt_next) -- the plain vanilla finite-difference scheme, not anything specific to our codebase.
       A window with fewer than 3 points cannot produce even one curvature estimate this way; see (d).
 

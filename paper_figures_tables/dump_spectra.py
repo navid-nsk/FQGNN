@@ -69,7 +69,7 @@ PI = math.pi
 
 
 # ------------------------------------------------------------------------------------------------ #
-#  model builders (EXACT run_fqnative2_5seed construction sequence, seed 0)                          #
+#  model builders (EXACT run_fqnative_sobolev_5seed construction sequence, seed 0)                          #
 # ------------------------------------------------------------------------------------------------ #
 def build_fq(tr4):
     """Fresh FQDeepNative exactly as run_fqnative_sobolev_5seed.run_seed(seed=0) builds it
