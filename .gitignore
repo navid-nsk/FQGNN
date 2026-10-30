@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------- input data, caches, run outputs
+external_data/
+task_alpha/data/
+task_alpha/cache/
+task_alpha/runs/
+task_alpha/baselines/_driver/
+task_alpha/baselines/_driver_d7/
+task_alpha/baselines/**/runs*/
+task_alpha/baselines/**/_scratch/
+task_alpha/baselines/**/_export/
+task_alpha/baselines/**/_duckdb_tmp/
+task_alpha/baselines/CTRVKalman/tuned_hp.json
+paper_figures_tables/figdata/
+paper_figures_tables/output/
+
+# ---------------------------------------------------------------- upstream baseline code
+# (placed locally as described in task_alpha/baselines/THIRD_PARTY.md; never committed)
+task_alpha/baselines/HABIT-main/
+task_alpha/baselines/MH-GIN-main/
+task_alpha/baselines/MultitaskAIS-master/
+task_alpha/baselines/CSDI/*
+!task_alpha/baselines/CSDI/hp_csdi_optuna.py
+!task_alpha/baselines/CSDI/run_csdi_5seed_gaps.py
+!task_alpha/baselines/CSDI/run_csdi_h2h.py
+task_alpha/baselines/SAITS/*
+!task_alpha/baselines/SAITS/build_ais_h5.py
+!task_alpha/baselines/SAITS/hp_saits_optuna.py
+!task_alpha/baselines/SAITS/run_saits_5seed_gaps.py
+!task_alpha/baselines/SAITS/run_saits_h2h.py
+task_alpha/baselines/BF-BiLSTM/*
+!task_alpha/baselines/BF-BiLSTM/eval_gaps_bf.py
+!task_alpha/baselines/BF-BiLSTM/export_gaps_npz.py
+!task_alpha/baselines/BF-BiLSTM/predict_gaps_bf.py
+!task_alpha/baselines/BF-BiLSTM/run_bfbilstm_h2h.py
+
+# ---------------------------------------------------------------- checkpoints, arrays, tables, figures, logs
+*.pt
+*.pth
+*.ckpt
+*.ckpt-*
+*.h5
+*.pkl
+*.npz
+*.npy
+*.parquet
+*.db
+*.csv
+*.csv.gz
+*.xlsx
+*.png
+*.pdf
+*.log
+*.done
+
+# ---------------------------------------------------------------- Python and CUDA build outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.obj
+*.o
+*.so
+*.pyd
+*.dll
+*.lib
+*.exp
+
+# ---------------------------------------------------------------- Lean build directory
+lean/.lake/

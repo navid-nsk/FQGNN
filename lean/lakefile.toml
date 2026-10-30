@@ -1,0 +1,17 @@
+name = "fqgnn"
+version = "0.1.0"
+defaultTargets = ["FQGNN", "MainTheorems"]
+# Warnings are errors for this package only (Mathlib keeps its own options):
+# the development compiles with no warnings and no `sorry`.
+moreLeanArgs = ["-DwarningAsError=true"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.35.0-rc3"
+
+[[lean_lib]]
+name = "FQGNN"
+
+[[lean_lib]]
+name = "MainTheorems"

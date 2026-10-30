@@ -1,0 +1,28 @@
+# Main environment: Python 3.12 (3.12.13 was used).  Pinned to the versions used for the study;
+# only packages imported by the code in this repository are listed.
+#
+# PyTorch was the CUDA 12.8 build (torch==2.11.0+cu128); install the build that matches your CUDA
+# toolkit from the PyTorch package index before installing the rest of this file.
+torch==2.11.0
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.3
+pyarrow==24.0.0
+scikit-learn==1.8.0
+optuna==4.8.0
+matplotlib==3.10.9
+openpyxl==3.1.5
+Pillow==12.2.0
+cartopy==0.25.0
+# SAITS adapter (task_alpha/baselines/SAITS)
+h5py==3.14.0
+# HABIT adapter (task_alpha/baselines/HABIT)
+duckdb==1.5.4
+h3==4.5.0
+networkx==3.6.1
+# building the optional CUDA extensions (fqcuda/*/setup_*.py)
+setuptools==70.2.0
+#
+# The BF-BiLSTM and MultitaskAIS baselines run in two further environments (TensorFlow); their
+# versions are listed in README.md.  Dependencies of the upstream baseline repositories are listed
+# in task_alpha/baselines/THIRD_PARTY.md.
